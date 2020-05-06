@@ -9,8 +9,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: wordpressdatabase
-      MYSQL_USER: rahul
-      MYSQL_PASSWORD: mrrahul
+      MYSQL_USER: usr
+      MYSQL_PASSWORD: password
       
       
   wordpressos:
@@ -24,8 +24,8 @@ services:
       - 8080:80
     environment:
       WORDPRESS_DB_HOST: mysqlos
-      WORDPRESS_DB_USER: rahul
-      WORDPRESS_DB_PASSWORD: mrrahul
+      WORDPRESS_DB_USER: usr
+      WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: wordpressdatabase
 
 volumes:
